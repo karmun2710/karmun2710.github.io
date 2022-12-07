@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Title for the page -->
-    <title>Document</title>
+    <title>Kar Mun</title>
 
     <!-- Link to my style sheet -->
     <link rel="stylesheet" href="index.css">
@@ -23,20 +23,102 @@
 
 
 <body>
-    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
-    <div class="myWeek1">
-        <h1> Welcome to my Portfolio! </h1>
+
+    <!--Header-->
+    <div class="Header">
+
+        <h1> Data Science for Economists </h1>
+        <h2> Loh Kar Mun</h2>
+
+        <a href="index.html" id="link">Portfolio</a>
+        <a href="project.html" id="link">Project</a>
+        <a href="ABOUT.html" id="link">About Me</a>
+
+        <p> Welcome to my Portfolio! </p>
+
+    </div>
+
+
+<!--Week 1 Homework-->
+<div class = "title">
+    <h2>Week 1</h2>
+</div>
+
+    <div class = "style">
+
+        <div class="style1">
+            <h3>Approval ratings</h3>
+            <p>The first chart looks at to what extent do the people in United Kingdom approve of the government's record between 2020 and 2022.</p>
+            <div class="chart" id="Chart1"></div>
+        </div>
+
+        <div class = "style1">
+            <h3>Important issues</h3>
+            <p>The second chart compares which issue (Health or Economy) the Britons think is the most important issue faced by their country between 2020 and 2022.</p>
+            <div class="chart" id="Chart2"> </div>
+        </div>
+    <p>The two charts above were embedded from the rapid charts repository. </p>
+    </div>
+</div>
+
+<!--Week 2 Homework-->
+<div class = "title">
+    <h2>Week 2</h2>
+</div>
+
+    <div class = "style">
+
+        <div class="style1">
+            <h3>Outstanding IMF debt</h3>
+            <p>This chart shows a chart of IMF Lending Outstanding in Nominal terms.</p>
+            <div class="chart" id="Chart3"></div>
+        </div>
+
+        <div class = "style1">
+            <h3>IMF lending outstanding as a percentage of GDP</h3>
+            <p>This chart uses GDP data from each year to show the IMF Lending Outstanding.</p>
+            <div class="chart" id="Chart4"> </div>
+        </div>
+    <p>Having adjusted the data to show credit outstanding as a percentage of global GDP, 1984 can be seen as the riskiest year due to its highest proportion of IMF lending to global GDP. </p>
+    </div>
+</div>
+
+<!--Week 3 Homework-->
+<div class = "title">
+    <h2>Week 3</h2>
+</div>
+
+    <div class = "style">
+
+        <div class="style1">
+            <h3>Labour Productivity Forecast (Bar Chart)</h3>
+            <p>The first chart shows the Labour Productivity Forecast in three different countries and the OECD Average.</p>
+            <p>The data are derived as average hours worked multiplied by the corresponding and consistent measure of employment for each particular country.</p>
+            <div class="chart" id="Chart5"></div>
+        </div>
+
+        <div class = "style1">
+            <h3>Labour Productivity Forecast (Line Chart)</h3>
+            <p>This bar chart uses the same data as the previous chart, however, it is presented as a line chart.</p>
+            <div class="chart" id="Chart6"> </div>
+        </div>
+    <p>I chose to modify it to a line chart instead of a bar chart as the data is a time series and therefore has a large numer of data points.</p>
+    </div>
+</div>
+
+<!--Week 4 Homework-->
+<div class = "title">
+    <h2>Week 4</h2>
+    <div class = "style">
+
         
-        <h3>Approval ratings</h3>
-
-        <p>The first chart looks at to what extent do the people in United Kingdom approve of the government's record between 2020 and 2022?</p>
-        <div class="chart" id="Chart1"></div>
-
-        <h3>Important issues</h3>
-        <p>The second chart compares the issues (Health and The Economy) which the Britons think are the most important their country is facing between 2020 and 2022.</p>
-        <div class="chart" id="Chart2"> </div>
-    </div> 
-</body>
+            <h3>Olympic Games Tokyo 2020</h3>
+            <p>This chart shows the type and amount of medals received by the countries below during the Olympic Games in 2020 .</p>
+            <div class="widechart" id="Chart7"> </div>
+            <p>The link to the colab where I conducted the data analysis can be seen <a href="https://colab.research.google.com/drive/1kiMCAf3abugN-c3NCk1eE4IHC7zMmrQ_?usp=share_link" target="_blank">here.</a></p>
+            <p>I chose this website because the data did not require much cleaning and I was able to obtain the table directly from the url using Python. .</p>
+    </div>
+</div>
 
 
 <script>
@@ -44,10 +126,20 @@
     var myChart1 = "chart_approvalRatingsUK.json";
     var myChart2 = "chart_importantIssuesUK.json";
     var myChart3 = "IMFlending.json";
+    var myChart4 = "IMF_lending_GDP.json";
+    var myChart5 = "Labour_productivity_bar.json";
+    var myChart6 = "Labour_productivity_line.json";
+    var myChart7 = "Olympics2020.json"
+    
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7)
+
 </script>
 
 </html>
