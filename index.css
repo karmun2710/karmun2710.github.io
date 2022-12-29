@@ -103,6 +103,22 @@ p {
     border-radius: 10px;
     border-color: rgb(24, 54, 66);
 }
+
+.project_img{
+    align-items: center;
+    background-color: white;
+    
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #313d5a;
+    margin-left: 35px;
+    margin-bottom: 20px;
+}
+
+.project_img:hover {
+    transform: scale(1.1);
+}
     
 
 /* Set the apperance of the class, chart */
