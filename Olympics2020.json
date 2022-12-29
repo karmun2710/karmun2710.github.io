@@ -1,0 +1,41 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+        "title": {
+        "text": "Olympic Games Tokyo 2020",
+        "subtitle": "Composition of medal achievements by several different countries during the 2020 Summer Olympics, Source: ESPN",
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10,
+        "anchor": "start",
+        "color": "black"
+      },
+  
+    "data": {"url": "https://raw.githubusercontent.com/karmun2710/karmun2710.github.io/main/summerolympics.csv"},
+    "height": 300,
+    "width": 500,
+    "mark": "bar",
+    
+    "encoding": {
+      "x": {
+        "field": "Country",
+        "type": "nominal",
+        "title": "Country",
+        "sort":"-y"
+      },
+     
+      "y": {
+        "field":"Total",
+        "type": "quantitative"
+      },
+  
+      "color": {
+        "field": "Medal Colour",
+        "type": "ordinal",
+        "scale": {
+          "domain": ["Gold", "Silver", "Bronze"],
+          "range": ["#599ad3", "#f9a65a", "#9e66ab"]
+        },
+        "title": "Medal Colour"
+      },
+      "order": {"aggregate": "count"}
+    }
+  }
