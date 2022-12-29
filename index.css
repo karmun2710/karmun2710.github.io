@@ -13,6 +13,10 @@ body{
     margin-left: auto;
     margin-right: auto;
     background-color:#fefefe;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 /* BUTTONS */
@@ -83,6 +87,21 @@ p {
     width: 440px;
     float:left;
     background-color: #ffffff;    
+}
+
+.project_style{
+    margin: auto;
+    margin-top: 0px;
+    align-content: center;
+    max-width: 904px;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+      
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(24, 54, 66);
 }
     
 
