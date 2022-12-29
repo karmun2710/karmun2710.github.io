@@ -1,0 +1,12 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "parlimen.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {"type": "nominal", "field": "party"},
+    "y": {"aggregate": "count", "field": "state"}
+  }
+}
