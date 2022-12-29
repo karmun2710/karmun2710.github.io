@@ -1,42 +1,139 @@
-/* Richard Davies, Data Science for Economists */
-
-/* This is my first proper css file */
-
-
 /* Import a font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-
 /* Set the background color for my page: */
-body{
-    background-color: rgb(233, 233, 233);
- 
+
+body{ 
+    background-color: #dce7f0;
+}
+
+.Header{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#fefefe;
+}
+
+/* BUTTONS */
+#link{
+    background-color: rgb(13, 79, 138, 0.6);
+    padding:10px;
+    border:2px;
+    border-color:rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 10px;
+
+    font-family:Georgia, 'Times New Roman', Times, serif
+    font-weight 300;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+#link:hover{
+    background-color: rgb(12, 46, 100);
+    border:2px;
+    border-color:white;
+    border-style: solid;
 }
 
 
 /* Choose the appearance of the tags, h1, h3 and p: */
-h1, h3, p{
-    color:rgb(17, 17, 17);
+h1{
+    color: #283e51;
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
-    
-.myWeek1{
-    margin: auto;
-    max-width: 600px;
-    background-color: bisque;
+
+h2{
+    color:rgb(4, 36, 80);
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
 }
 
+h3 {
+    color:rgb(0, 0, 0);
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+p {
+    color:rgb(0, 0, 0);
+    font-family: Roboto;
+    text-align: center;
+}
+.style{
+    margin: auto;
+    margin-top: 0px;
+    align-content: center;
+    max-width: 904px;
+    background-color: #ffffff;
+    padding: 20px;
+      
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(24, 54, 66);
+}
+
+.style1{
+    margin-left:10px;
+    align-content: center;
+    width: 440px;
+    float:left;
+    background-color: #ffffff;    
+}
+    
 
 /* Set the apperance of the class, chart */
 .chart{
-    background-color: orange;
-    width:330px;
-    border-width: 10px;
+    align-items: center;
+    background-color: white;
+    width: 400px;
+    
+    border-width: 2px;
     border-style: solid;
     border-radius: 5px;
-    border-color: red;
-
-    
+    border-color: #313d5a;
+    margin-left: 35px;
+    margin-bottom: 20px;
 }
+
+.chart:hover {
+    transform: scale(1.1);
+}
+
+.widechart{
+    align-items: center;
+    background-color: white;
+    width:700px;
     
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #313d5a;
+    margin-left: 180px;
+    margin-bottom: 20px;
+
+}
+
+.widechart:hover {
+    transform: scale(1.1);
+}
+
+.chartdashboard{
+    align-items: center;
+    background-color: white;
+    width:268px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #313d5a;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.chartdashboard:hover {
+    transform: scale(1.1);
+}
