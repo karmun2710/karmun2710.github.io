@@ -40,7 +40,11 @@
 				watershed May 2018 elections that saw the ruling coalition lose power
 				for the first time since independence. The political landscape has made
 				this election particularly unpredictable. The aim of my project is to
-				give an overview of Malaysia’s 15th General Election.
+				give an overview of Malaysia’s 15th General Election. <br />
+				<br />
+				This project uses Python to clean and process the data. It then uses
+				Javascript to build the charts. For more complicated visualizations,
+				Python's Matplotlib library is used instead.
 			</h3>
 		</div>
 
@@ -66,7 +70,15 @@
 					height="500"
 					class="project_img"
 				/>
-				<p>[insert description]</p>
+				<p>
+					The data is downloaded directly from SPR.gov.my. Using
+					<a
+						href="https://github.com/Thevesh/analysis-election-msia/blob/main/charts_results.py"
+						>Thevesh's code</a
+					>
+					, we are able to produce a map of the voter turnouts' for each
+					parlimentary seat.
+				</p>
 			</div>
 		</div>
 
@@ -77,7 +89,15 @@
 			</h3>
 			<div>
 				<div id="chart1"></div>
-				<p>[insert description]</p>
+				<p>
+					The top 3 parties won 186 seats in GE15.<br />The dataset is sourced
+					from Thevesh's
+					<a
+						href="https://github.com/Thevesh/analysis-election-msia/blob/main/chart_winner_seatsize.ipynb"
+						>Github repository</a
+					>
+					on GE15. It is then vizualized through Vega.js.
+				</p>
 			</div>
 		</div>
 
@@ -90,7 +110,14 @@
 					height="500"
 					class="project_img"
 				/>
-				<p>[insert description]</p>
+				<p>
+					We altered
+					<a
+						href="https://github.com/Thevesh/analysis-election-msia/blob/main/charts_results.py"
+						>Thevesh's code </a
+					>, we altered the code by combining the rejected and spoilt votes
+					columns to produce a new dataset that we can visualize using Vega.js.
+				</p>
 			</div>
 		</div>
 
@@ -99,24 +126,48 @@
 				AGE, GENDER AND ETHNICITY OF CANDIDATES RUNNING FOR MALAYSIA’S 15TH
 				GENERAL ELECTION
 			</h3>
+			<p>
+				In this section, we break down the every GE15 candidates by their age,
+				gender and ethnicity. Data is downloaded from the spr.gov.my website.
+				After data cleaning with Python, we exported the data into CSV and
+				uploaded it onto Github. We then vizualize the data through Vega.js.
+			</p>
 			<div>
 				<div id="genderChart" class="project_img"></div>
+				<p>
+					It is clear to see that male candidates dominate the election
+					landscape.
+				</p>
 				<div id="ethnicityChart" class="project_img"></div>
+				<p>
+					Bumiputera candidates are the majority, followed by Chinese
+					candidates, Indian candidates and others.
+				</p>
 				<div id="ageChart" class="project_img"></div>
-				<p>[insert description]</p>
+				<p>
+					The median age of candidates is within the 50 to 60 years old range.
+				</p>
 			</div>
 		</div>
 
 		<div class="project_style">
 			<h3>AGE OF THE SITTING PRIME MINISTER OF MALAYSIA</h3>
 			<div>
-				<img
+				<div id="pmAgeChart" class="project_img"></div>
+				<!-- <img
 					src="project\images\prime_minister_age.png"
 					width="500"
 					height="400"
 					class="project_img"
-				/>
-				<p>[insert description]</p>
+				/> -->
+				<p>
+					The dataset is sourced from Thevesh's
+					<a
+						href="https://github.com/Thevesh/analysis-election-msia/blob/main/chart_pm_age.ipynb"
+						>Github repository</a
+					>
+					on GE15.
+				</p>
 			</div>
 		</div>
 	</body>
@@ -127,11 +178,13 @@
 		var ethnicityChart = "project/charts/candidate_ethnicity.json";
 		var genderChart = "project/charts/candidate_gender.json";
 		var ageChart = "project/charts/candidate_age.json";
+		var pmAgeChart = "project/charts/pm_age.json";
 
 		// Embed charts:
 		vegaEmbed("#chart1", partyChart);
 		vegaEmbed("#ethnicityChart", ethnicityChart);
 		vegaEmbed("#genderChart", genderChart);
 		vegaEmbed("#ageChart", ageChart);
+		vegaEmbed("#pmAgeChart", pmAgeChart);
 	</script>
 </html>
