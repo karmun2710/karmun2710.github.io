@@ -14,7 +14,7 @@
   },
   "width": 500, 
 
-  "mark": "bar",
+  "mark": {"type": "bar", "tooltip": true},
   "encoding": {
     "y": {"type": "nominal", "field": "party", "sort":"-x", "title": "Party"},
     "x": {"aggregate": "count", "field": "parlimen", "title": "Total Seats Won"}
