@@ -42,9 +42,19 @@
 				this election particularly unpredictable. The aim of my project is to
 				give an overview of Malaysia’s 15th General Election. <br />
 				<br />
-				This project uses Python to clean and process the data. It then uses
-				Javascript to build the charts. For more complicated visualizations,
-				Python's Matplotlib library is used instead.
+				This webpage is built using HTML, CSS and Javascript. It uses the
+				<a href="https://vega.github.io/vega-lite/">vega-lite</a> Javascript API
+				for building simple and interactive visualizations. Before building the
+				front-end, Python is used extensively to
+				<a
+					href="https://github.com/karmun2710/karmun2710.github.io/tree/main/python_analysis"
+					>download, clean and process the data</a
+				>. Complicated visualizations that plot based on geography are created
+				through Python's Matplotlib and GeoPandas libraries instead. All data is
+				sourced from the
+				<a href="https://dashboard.spr.gov.my/#!/home"
+					>Malaysia General Election Website</a
+				>.
 			</h3>
 		</div>
 
@@ -71,13 +81,12 @@
 					class="project_img"
 				/>
 				<p>
-					The data is downloaded directly from SPR.gov.my. Using
+					The data is downloaded from SPR.gov.my. Python is used to construct
+					this image which can be found
 					<a
-						href="https://github.com/Thevesh/analysis-election-msia/blob/main/charts_results.py"
-						>Thevesh's code</a
-					>
-					, we are able to produce a map of the voter turnouts' for each
-					parlimentary seat.
+						href="https://github.com/karmun2710/karmun2710.github.io/blob/main/python_analysis/analysis.ipynb"
+						>here</a
+					>.
 				</p>
 			</div>
 		</div>
@@ -91,12 +100,11 @@
 				<div id="chart1"></div>
 				<p>
 					The top 3 parties won 186 seats in GE15.<br />The dataset is sourced
-					from Thevesh's
+					from this
 					<a
-						href="https://github.com/Thevesh/analysis-election-msia/blob/main/chart_winner_seatsize.ipynb"
-						>Github repository</a
-					>
-					on GE15. It is then vizualized through Vega.js.
+						href="https://github.com/karmun2710/karmun2710.github.io/blob/main/python_analysis/analysis.ipynb"
+						>Jupyter Notebook</a
+					>. It is then vizualized through Vega.js.
 				</p>
 			</div>
 		</div>
@@ -111,12 +119,12 @@
 					class="project_img"
 				/>
 				<p>
-					We altered
+					Data downloaded from spr.gov.my website is altered by combining the
+					rejected and spoilt votes columns together. Code can be found
 					<a
-						href="https://github.com/Thevesh/analysis-election-msia/blob/main/charts_results.py"
-						>Thevesh's code </a
-					>, we altered the code by combining the rejected and spoilt votes
-					columns to produce a new dataset that we can visualize using Vega.js.
+						href="https://github.com/karmun2710/karmun2710.github.io/blob/main/python_analysis/analysis.ipynb"
+						>here</a
+					>.
 				</p>
 			</div>
 		</div>
@@ -128,9 +136,9 @@
 			</h3>
 			<p>
 				In this section, we break down the every GE15 candidates by their age,
-				gender and ethnicity. Data is downloaded from the spr.gov.my website.
-				After data cleaning with Python, we exported the data into CSV and
-				uploaded it onto Github. We then vizualize the data through Vega.js.
+				gender and ethnicity. Data is downloaded directly from the spr.gov.my
+				website. No pre-processing is done. After uploading the data onto
+				Github, the data is vizualized through Vega.js.
 			</p>
 			<div>
 				<div id="genderChart" class="project_img"></div>
@@ -161,12 +169,11 @@
 					class="project_img"
 				/> -->
 				<p>
-					The dataset is sourced from Thevesh's
+					The dataset pre-processing is done through Python which can be found
 					<a
-						href="https://github.com/Thevesh/analysis-election-msia/blob/main/chart_pm_age.ipynb"
-						>Github repository</a
-					>
-					on GE15.
+						href="https://github.com/karmun2710/karmun2710.github.io/blob/main/python_analysis/analysis.ipynb"
+						>here</a
+					>.
 				</p>
 			</div>
 		</div>
