@@ -94,6 +94,9 @@
 				GENERAL ELECTION
 			</h3>
 			<div>
+				<div id="genderChart" class="project_img"></div>
+				<div id="ethnicityChart" class="project_img"></div>
+				<div id="ageChart" class="project_img"></div>
 				<p>[insert description]</p>
 			</div>
 		</div>
@@ -115,8 +118,14 @@
 	<script>
 		//Define charts:
 		var partyChart = "project/charts/parties.json";
+		var ethnicityChart = "project/charts/candidate_ethnicity.json";
+		var genderChart = "project/charts/candidate_gender.json";
+		var ageChart = "project/charts/candidate_age.json";
 
 		// Embed charts:
 		vegaEmbed("#chart1", partyChart);
+		vegaEmbed("#ethnicityChart", ethnicityChart);
+		vegaEmbed("#genderChart", genderChart);
+		vegaEmbed("#ageChart", ageChart);
 	</script>
 </html>
