@@ -1,12 +1,22 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Seats Won by Parties",
+    "subtitle": ["Source: spr.gov.my"],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor":"#000000"},
   "data": {
-    "url": "parlimen.csv",
+    "url": "https://raw.githubusercontent.com/karmun2710/karmun2710.github.io/main/project/data/parlimen.csv",
     "format": {"type": "csv"}
   },
-  "mark": "line",
+  "width": 500, 
+
+  "mark": "bar",
   "encoding": {
-    "x": {"type": "nominal", "field": "party"},
-    "y": {"aggregate": "count", "field": "state"}
+    "y": {"type": "nominal", "field": "party", "sort":"-x", "title": "Party"},
+    "x": {"aggregate": "count", "field": "parlimen", "title": "Total Seats Won"}
   }
 }
