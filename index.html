@@ -78,7 +78,7 @@
         <div class = "style1">
             <h3>IMF lending outstanding as a percentage of GDP</h3>
             <p>This chart uses GDP data from each year to show the IMF Lending Outstanding.</p>
-            <div class="chart" id="Chart4"> </div>
+            <!-- <div class="chart" id="Chart4"> </div> -->
         </div>
     <p>Having adjusted the data to show credit outstanding as a percentage of global GDP, 1984 can be seen as the riskiest year due to its highest proportion of IMF lending to global GDP. </p>
     </div>
@@ -98,7 +98,7 @@
     <div class = "style1">
         <h3>Labour Productivity Forecast (Line Chart)</h3>
         <p>This bar chart uses the same data as the previous chart, however, it is presented as a line chart.</p>
-        <div class="chart" id="Chart6"> </div>
+        <!-- <div class="chart" id="Chart6"> </div> -->
     </div>
     <p>I chose to modify it to a line chart instead of a bar chart as the data is a time series and therefore has a large numer of data points.</p>
 </div>
@@ -122,13 +122,13 @@
 
 <script>
     //Define charts:
-    var myChart1 = "chart_approvalRatingsUK.json";
-    var myChart2 = "chart_importantIssuesUK.json";
-    var myChart3 = "IMFlending.json";
-    var myChart4 = "IMF_lending_GDP.json";
-    var myChart5 = "Labour_productivity_bar.json";
-    var myChart6 = "Labour_productivity_line.json";
-    var myChart7 = "Olympics2020.json"
+    var myChart1 = "charts/chart_approvalRatingsUK.json";
+    var myChart2 = "charts/chart_importantIssuesUK.json";
+    var myChart3 = "charts/IMFlending.json";
+    var myChart4 = "charts/IMF_lending_GDP.json";
+    var myChart5 = "charts/Labour_productivity_bar.json";
+    var myChart6 = "charts/Labour_productivity_line.json";
+    var myChart7 = "charts/Olympics2020.json"
     
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
