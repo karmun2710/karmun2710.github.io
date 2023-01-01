@@ -11,7 +11,7 @@
   "data":{"url": "https://raw.githubusercontent.com/karmun2710/karmun2710.github.io/main/data_IMF_creditOutstanding.csv"},
 
   "transform": [
-    {"calculate": "datum.totals/1000000000", "as": "billions"}
+    {"calculate": "datum.Totals/1000000000", "as": "billions"}
     ],
   
 
@@ -33,7 +33,7 @@
          "labelAngle": 45}},
 
       "y": {
-        "field": "total_billion",
+        "field": "Total_billion",
         "type": "quantitative",
         "title": "",
         "axis": {"grid": false}}
