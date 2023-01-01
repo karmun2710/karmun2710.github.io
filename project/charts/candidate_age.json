@@ -18,8 +18,8 @@
 
       "encoding": {
       "y": {"aggregate": "count", "stack": true},
-      "x": {"field": "age", "type": "quantitative", "bin": {"maxbins": 10}}
+      "x": {"field": "age", "type": "quantitative", "bin": {"maxbins": 10}},
+      "color": {"value": "#FFCBA4"}
       },  
       "mark": {"type": "bar"}
-
 }

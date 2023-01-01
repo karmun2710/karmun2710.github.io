@@ -19,8 +19,9 @@
 
   "encoding": {
       "x": {"field": "date", "type": "temporal"},
-      "y": {"field": "age", "type": "quantitative"}
+      "y": {"field": "age", "type": "quantitative"},
+      "color": {"value": "#CBC3E3"}
       },  
-      "mark": {"type": "line", "tooltip": true}
+      "mark": {"type": "circle", "tooltip": true, "interpolate": "monotone"}
 
 }
