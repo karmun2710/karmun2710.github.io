@@ -41,24 +41,36 @@
 				for the first time since independence. The political landscape has made
 				this election particularly unpredictable. The aim of my project is to
 				give an overview of Malaysia’s 15th General Election. <br />
-				<br />
+			</p>
+		</div>
+
+		<div class="project_style">
+			<h3>Methodology</h3>
+			<p>
 				This webpage is built using HTML, CSS and Javascript. It uses the
 				<a href="https://vega.github.io/vega-lite/">vega-lite</a> Javascript API
-				for building simple and interactive visualizations. Before building the
-				front-end, Python is used extensively to
-				<a
-					href="https://github.com/karmun2710/karmun2710.github.io/tree/main/python_analysis"
-					>download, clean and process the data</a
-				>. Thankfully, the data available is extremely clean, thus most of the
-				work done involves transforming the data into a format that can be
-				easily visualized. Complicated visualizations that plot based on
-				geography are created through Python's Matplotlib and GeoPandas
-				libraries instead. <br />
-				<br />
-				All data is sourced from the
+				for constructing simple and interactive visualizations. Before building
+				the front-end, the data is downloaded for preprocessing. All data is
+				sourced from the
 				<a href="https://dashboard.spr.gov.my/#!/home"
 					>Malaysia General Election Website</a
 				>.
+
+				<br />
+				<br />While the data available is relatively clean, preprocessing is
+				still required before it can be utilized. Most of the challenges faced
+				during this stage came from turning the data into something that can be
+				used with ease. This involves removing unnecessary columns, transforming
+				the data into the desired format, and translating certain data from
+				Malay to English. Futhermore, some data must also be derived manually by
+				performing operations on columns. Therefore, Python and its Pandas
+				library are used extensively
+				<a
+					href="https://github.com/karmun2710/karmun2710.github.io/tree/main/python_analysis"
+					>in this stage</a
+				>. Complicated visualizations that plot based on geography (e.g
+				chloropleth charts) are also created through Python's Matplotlib and
+				GeoPandas.
 			</p>
 		</div>
 
