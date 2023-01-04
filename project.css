@@ -1,0 +1,175 @@
+/* Import a font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Set the background color for my page: */
+
+body{ 
+    background-color: #dce7f0;
+}
+
+.Header{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#fefefe;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* BUTTONS */
+#link{
+    background-color: rgb(13, 79, 138, 0.6);
+    padding:10px;
+    border:2px;
+    border-color:rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 10px;
+
+    font-family:Georgia, 'Times New Roman', Times, serif
+    font-weight 300;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+#link:hover{
+    background-color: rgb(12, 46, 100);
+    border:2px;
+    border-color:white;
+    border-style: solid;
+}
+
+
+/* Choose the appearance of the tags, h1, h3 and p: */
+h1{
+    color: #283e51;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+h2{
+    color:rgb(4, 36, 80);
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h3 {
+    color:rgb(0, 0, 0);
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+p {
+    color:rgb(0, 0, 0);
+    font-family: Roboto;
+    text-align: center;
+}
+.style{
+    margin: auto;
+    margin-top: 0px;
+    align-content: center;
+    max-width: 904px;
+    background-color: #ffffff;
+    padding: 20px;
+      
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(24, 54, 66);
+}
+
+.style1{
+    margin-left:10px;
+    align-content: center;
+    width: 440px;
+    float:left;
+    background-color: #ffffff;    
+}
+
+
+.project_style{
+    margin: auto;
+    margin-top: 10px;
+    align-content: center;
+    width: 904px;
+    max-width: 904px;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+      
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(24, 54, 66);
+}
+
+.project_img{
+    align-items: center;
+    background-color: white;
+    width: 70%;
+    
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    margin-left: 35px;
+}
+
+.project_img:hover {
+    transform: scale(1.1);
+}
+    
+
+/* Set the apperance of the class, chart */
+.chart{
+    align-items: center;
+    background-color: white;
+    width: 400px;
+    
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #313d5a;
+    margin-left: 35px;
+    margin-bottom: 20px;
+}
+
+.chart:hover {
+    transform: scale(1.1);
+}
+
+.widechart{
+    align-items: center;
+    background-color: white;
+    width:700px;
+    
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #313d5a;
+    margin-left: 180px;
+    margin-bottom: 20px;
+
+}
+
+.widechart:hover {
+    transform: scale(1.1);
+}
+
+.chartdashboard{
+    align-items: center;
+    background-color: white;
+    width:268px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #313d5a;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.chartdashboard:hover {
+    transform: scale(1.1);
+}
