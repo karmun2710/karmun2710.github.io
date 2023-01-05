@@ -1,0 +1,41 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "title": {
+      "text": "Healthcare Expenditure in Germany (Regional)",
+      "subtitle":["Source: Statistisches Bundesamt, 2020"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":9,
+      "anchor": "start",
+      "color": "#000000",
+      "subtitleColor":"#020202"},
+  
+    "width": 600,
+    "height": 495,
+    "data": {
+      "url": "https://raw.githubusercontent.com/karmun2710/karmun2710.github.io/main/Week7Portfolio/germany-regions.json",
+      "format": {"type": "topojson", "feature": "DEU_adm2"}
+    },
+    "projection": {"type":"equirectangular"},
+    "transform": [
+      {
+        "lookup": "properties.NAME_1",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/karmun2710/karmun2710.github.io/main/Week7Portfolio/germanhealth.csv"
+          },
+          "key": "Region",
+          "fields": ["Total Expenditure"]
+        }
+      }
+    ],
+    "mark": {"type": "geoshape", "stroke": "whitesmoke", "strokeWidth": "0.9"},
+    "encoding": {
+      "color": {"field": "Total Expenditure", "type": "quantitative", "scale":{}},
+      "tooltip": [
+        {"field": "properties.NAME_1", "type": "nominal", "title": "Region"},
+        {"field": "Total Expenditure", "type": "nominal"}
+      ]
+    },
+    "config": {}
+  }
