@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Seats won by Barisan National",
+    "text": "Seats won by Perikatan Nasional",
     "subtitle": ["Source: https://github.com/dosm-malaysia/data-open/tree/main/datasets/census"],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
@@ -22,7 +22,7 @@
       "x": {"field": "ethnicity_proportion_bumi", "type": "quantitative", "title": "Proportion of Bumiputeras"},
       "color":{
         "condition": {
-          "test": "datum.Winner == 'BN'",
+          "test": "datum.Winner == 'PN'",
           "value": "red"
         },
         "value": "blue"

@@ -75,35 +75,26 @@
 		</div>
 
 		<div class="project_style">
-			<h2>Voter Turnout (GE14 vs GE15)</h2>
+			<h2>Ethnicity and GE15 Results</h2>
+			<p>
+				Here, we look through the results on the peninsula to get a sense of how
+				ethnicity structures Malaysian politics. I compare the vote share for
+				each coalition with the bumiputera population share within that
+				constituency.
+				<b
+					>Blue points are where the coalition in question lost; red points are
+					where they won. </b
+				>The deep structure of peninsular Malaysian politics jumps right out.
+				There is one coalition that fares well in non-Malay majority
+				constituencies. And the other two fare well in Malay-majority
+				constituencies. We can see that the battleground is the mixed
+				constituencies on the peninsula with 20-40% non-bumiputera populations.
+			</p>
 			<div>
-				<p>
-					The graphs above show the voter turnout for the 14th and 15th general
-					elections in Malaysia. From the graphs, we can see that after the
-					implementation of UNDI18, the number of people who voted in the 15th
-					election was more than the number of people who registered to vote in
-					the 14th election.
-				</p>
-			</div>
-		</div>
-
-		<div class="project_style">
-			<h2>Voter Turnout in GE15 by Parliament</h2>
-			<div>
-				<img src="project\images\turnout.png" class="project_img" />
-				<p>
-					This is a choropleth map that shows that voter turnout for each
-					parliamentary seat. This chart is chosen because it allows for more
-					intuitive and quicker interpretation of the data. We observe that,
-					despite having more parliamentary seats, there are overall
-					significantly higher turnouts in West Malaysia than East Malaysia. The
-					data is downloaded from SPR.gov.my. Python is used to construct this
-					chart which can be found
-					<a
-						href="https://github.com/karmun2710/karmun2710.github.io/blob/main/python_analysis/Choropleth_Charts.ipynb"
-						>here</a
-					>.
-				</p>
+				<div id="bn"></div>
+				<div id="pn"></div>
+				<div id="ph"></div>
+				<p></p>
 			</div>
 		</div>
 
@@ -133,8 +124,13 @@
 			<div>
 				<img src="project\images\output.png" class="project_img" />
 				<p>
-					Data downloaded from spr.gov.my website is altered by combining the
-					rejected and spoilt votes columns together. Code can be found
+					This is a choropleth map that shows the percentage of spoilt or
+					rejected votes for each parliamentary seat. This chart is chosen
+					because it allows for more intuitive and quicker interpretation of the
+					data. We can see that rural areas, such as the north of the peninsula,
+					tend to have a higher rate of rejected or spoilt votes. The data is
+					downloaded from SPR.gov.my. Python is used to construct this chart
+					which can be found
 					<a
 						href="https://github.com/karmun2710/karmun2710.github.io/blob/main/python_analysis/Choropleth_Charts.ipynb"
 						>here</a
@@ -205,6 +201,9 @@
 		var genderChart = "project/charts/candidate_gender.json";
 		var ageChart = "project/charts/candidate_age.json";
 		var pmAgeChart = "project/charts/pm_age.json";
+		var bn_seat = "project/charts/bn_seats.json";
+		var pn_seat = "project/charts/pn_seats.json";
+		var ph_seat = "project/charts/ph_seats.json";
 
 		// Embed charts:
 		vegaEmbed("#chart1", partyChart);
@@ -212,5 +211,8 @@
 		vegaEmbed("#genderChart", genderChart);
 		vegaEmbed("#ageChart", ageChart);
 		vegaEmbed("#pmAgeChart", pmAgeChart);
+		vegaEmbed("#bn", bn_seat);
+		vegaEmbed("#pn", pn_seat);
+		vegaEmbed("#ph", ph_seat);
 	</script>
 </html>
