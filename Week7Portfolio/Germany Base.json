@@ -1,0 +1,20 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Germany",
+  
+    "title": {
+      "text": "Germany by District",
+      "anchor": "middle",
+      "color": "#000000"},
+    
+    "width": 300,
+    "height": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/karmun2710/karmun2710.github.io/main/Week7Portfolio/germany-regions.json",
+      "format": {"type": "topojson", "feature": "DEU_adm2"}
+    },
+    "projection": {"type": "equirectangular"},
+    "mark": {"type": "geoshape", "stroke": "whitesmoke", "strokeWidth": "0.9"},
+    "encoding": {"tooltip": {"field": "properties.NAME_2", "type": "nominal", "title": "District"}},
+    "config": {}
+  }
