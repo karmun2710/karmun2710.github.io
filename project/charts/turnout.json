@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Proportion of Voter Turnout (%): GE14 vs GE15",
+    "subtitle": ["Source: spr.gov.my"],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor":"#000000"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/karmun2710/karmun2710.github.io/main/project/data/GE15_turnout.csv",
+    "format": {"type": "csv"}
+  },
+  "width": 500, 
+
+  "encoding": {
+    "x": {"field": "time", "title": "Time"}
+   
+  },
+  "layer": [
+    {
+      "mark": {"type": "bar", "size": 10, "xOffset": 5, "color": "red"},
+      "encoding": {
+    "y": {"field": "GE14 Turnout", "type": "quantitative", "title": "Percentage of Turnout"}
+      }
+    },
+    {
+      "mark": {"type": "bar", "size": 10, "xOffset": 15, "color": "blue"},
+      "encoding": {
+    "y": {"field": "GE15 Turnout", "type": "quantitative", "title": ""}
+      }
+    }
+  ]
+}

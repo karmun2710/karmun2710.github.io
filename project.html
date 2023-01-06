@@ -43,61 +43,6 @@
 				give an overview of Malaysia’s 15th General Election. <br />
 			</p>
 		</div>
-
-		<div class="project_style">
-			<h2>Data and Challenges faced</h2>
-			<p>
-				This webpage is built using HTML, CSS and Javascript. It uses the
-				<a href="https://vega.github.io/vega-lite/">vega-lite</a> Javascript API
-				for constructing simple and interactive visualizations. Before building
-				the front-end, the data is downloaded for preprocessing. All data is
-				sourced from the
-				<a href="https://dashboard.spr.gov.my/#!/home"
-					>Malaysia General Election Website</a
-				>.
-
-				<br />
-				<br />While the data available is relatively clean, preprocessing is
-				still required before it can be utilized. Most of the challenges faced
-				during this stage came from turning the data into something that can be
-				used with ease. This involves removing unnecessary columns, transforming
-				the data into the desired format, and translating certain data from
-				Malay to English. Futhermore, some data must also be derived manually by
-				performing operations on columns. Therefore, Python and its Pandas
-				library are used extensively
-				<a
-					href="https://github.com/karmun2710/karmun2710.github.io/tree/main/python_analysis"
-					>in this stage</a
-				>. Complicated visualizations that plot based on geography (e.g
-				chloropleth charts) are also created through Python's Matplotlib and
-				GeoPandas.
-			</p>
-		</div>
-
-		<div class="project_style">
-			<h2>Conclusion</h2>
-			<div>
-				<p>
-					The GE15 results showed that Malaysia is in a period of political flux
-					and uncertainty. The ruling coalition, Barisan Nasional lost its
-					majority, coming in third with 30 seats. Perikatan Nasional, a
-					coalition of conservative and Islamist parties led by former Prime
-					Minister Muhyiddin Yassin, came in second with 74 seats while Anwar
-					Ibrahim’s Pakatan Harapan coalition won the most with 82 seats. The
-					result show that ethnic structure is still a remarkably strong
-					predictor of election outcomes in the peninsula and Malaysia is in a
-					period of transition, and with the lack of a clear majority winner, it
-					is likely that political uncertainty will persist in the coming
-					months.
-				</p>
-			</div>
-		</div>
-
-		<div class="project_style">
-			<h2>Voter Turnout</h2>
-			<p></p>
-		</div>
-
 		<div class="project_style">
 			<h2>
 				Age, Gender and Ethnicity of Candidates Running for Malaysia's 15th
@@ -125,6 +70,29 @@
 					The median age of candidates is within the 50 to 60 years old range.
 				</p>
 			</div>
+		</div>
+
+		<div class="project_style">
+			<h2>Voter Turnout</h2>
+			<p>
+				These charts compares the hourly figures between GE14 and GE15. One
+				thing to note here is that it is normal to observe higher number of
+				votes in GE15 despite lower turnout. This is because of the introduction
+				of automatic voter registration and the lowering of legal voting age to
+				in GE15. Data is sourced from this
+				<a
+					href="https://github.com/karmun2710/karmun2710.github.io/blob/main/python_analysis/hourly_vote.ipynb"
+					>notebook</a
+				>.
+
+				<br /><br />
+				<b
+					>Blue bars represents figures from GE15, while red bars represents
+					figures from GE14</b
+				>
+			</p>
+			<div id="votes"></div>
+			<div id="turnout"></div>
 		</div>
 
 		<div class="project_style">
@@ -223,6 +191,53 @@
 				</p>
 			</div>
 		</div>
+		<div class="project_style">
+			<h2>Data and Challenges faced</h2>
+			<p>
+				This webpage is built using HTML, CSS and Javascript. It uses the
+				<a href="https://vega.github.io/vega-lite/">vega-lite</a> Javascript API
+				for constructing simple and interactive visualizations. Before building
+				the front-end, the data is downloaded for preprocessing. All data is
+				sourced from the
+				<a href="https://dashboard.spr.gov.my/#!/home"
+					>Malaysia General Election Website</a
+				>.
+
+				<br />
+				<br />While the data available is relatively clean, preprocessing is
+				still required before it can be utilized. Most of the challenges faced
+				during this stage came from turning the data into something that can be
+				used with ease. This involves removing unnecessary columns, transforming
+				the data into the desired format, and translating certain data from
+				Malay to English. Futhermore, some data must also be derived manually by
+				performing operations on columns. Therefore, Python and its Pandas
+				library are used extensively
+				<a
+					href="https://github.com/karmun2710/karmun2710.github.io/tree/main/python_analysis"
+					>in this stage</a
+				>. Complicated visualizations that plot based on geography (e.g
+				chloropleth charts) are also created through Python's Matplotlib and
+				GeoPandas.
+			</p>
+		</div>
+		<div class="project_style">
+			<h2>Conclusion</h2>
+			<div>
+				<p>
+					The GE15 results showed that Malaysia is in a period of political flux
+					and uncertainty. The ruling coalition, Barisan Nasional lost its
+					majority, coming in third with 30 seats. Perikatan Nasional, a
+					coalition of conservative and Islamist parties led by former Prime
+					Minister Muhyiddin Yassin, came in second with 74 seats while Anwar
+					Ibrahim’s Pakatan Harapan coalition won the most with 82 seats. The
+					result show that ethnic structure is still a remarkably strong
+					predictor of election outcomes in the peninsula and Malaysia is in a
+					period of transition, and with the lack of a clear majority winner, it
+					is likely that political uncertainty will persist in the coming
+					months.
+				</p>
+			</div>
+		</div>
 	</body>
 
 	<script>
@@ -235,6 +250,8 @@
 		var bn_seat = "project/charts/bn_seats.json";
 		var pn_seat = "project/charts/pn_seats.json";
 		var ph_seat = "project/charts/ph_seats.json";
+		var votes = "project/charts/votes.json";
+		var turnout = "project/charts/turnout.json";
 
 		// Embed charts:
 		vegaEmbed("#chart1", partyChart);
@@ -245,5 +262,7 @@
 		vegaEmbed("#bn", bn_seat);
 		vegaEmbed("#pn", pn_seat);
 		vegaEmbed("#ph", ph_seat);
+		vegaEmbed("#votes", votes);
+		vegaEmbed("#turnout", turnout);
 	</script>
 </html>

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Number of Votes Cast (Millions): GE14 vs GE15",
+    "subtitle": ["Source: spr.gov.my"],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor":"#000000"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/karmun2710/karmun2710.github.io/main/project/data/GE15_Votes.csv",
+    "format": {"type": "csv"}
+  },
+  "width": 500, 
+
+  "encoding": {
+    "x": {"field": "Time"}
+   
+  },
+  "layer": [
+    {
+      "mark": {"type": "bar", "size": 10, "xOffset": 5, "color": "red"},
+      "encoding": {
+    "y": {"field": "GE14 Votes", "type": "quantitative", "title": "Number of Votes"}
+      }
+    },
+    {
+      "mark": {"type": "bar", "size": 10, "xOffset": 15, "color": "blue"},
+      "encoding": {
+    "y": {"field": "GE15 Votes", "type": "quantitative", "title": ""}
+      }
+    }
+  ]
+}
