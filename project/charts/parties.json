@@ -16,7 +16,7 @@
 
   "mark": {"type": "bar", "tooltip": true},
   "encoding": {
-    "y": {"type": "nominal", "field": "party", "sort":"-x", "title": "Party"},
-    "x": {"aggregate": "count", "field": "parlimen", "title": "Total Seats Won"}
+    "x": {"type": "nominal", "field": "party", "sort":"-y", "title": "Party"},
+    "y": {"aggregate": "count", "field": "parlimen", "title": "Total Seats Won"}
   }
 }
