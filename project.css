@@ -94,7 +94,6 @@ p {
     margin: auto;
     margin-top: 10px;
     align-content: center;
-    width: 904px;
     max-width: 904px;
     background-color: #ffffff;
     padding: 20px;
@@ -109,7 +108,7 @@ p {
 .project_img{
     align-items: center;
     background-color: white;
-    width: 70%;
+    width: 85%;
     
     border-width: 1px;
     border-style: solid;

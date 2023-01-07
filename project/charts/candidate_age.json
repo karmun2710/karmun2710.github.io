@@ -13,8 +13,7 @@
     "url": "https://raw.githubusercontent.com/karmun2710/karmun2710.github.io/main/project/data/candidates_ge15.csv",
     "format": {"type": "csv"}
   },
-
-  "width": 500,  
+  "width": "container",
 
       "encoding": {
       "y": {"aggregate": "count", "stack": true},

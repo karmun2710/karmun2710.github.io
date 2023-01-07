@@ -2,12 +2,12 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Seats won by Pakatan Harapan",
-    "subtitle": ["Source: https://github.com/dosm-malaysia/data-open/tree/main/datasets/census"],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
     "color": "#000000",
     "subtitleColor":"#000000"},
+  "width": "container",
 
   "data": {
     "url": "https://raw.githubusercontent.com/karmun2710/karmun2710.github.io/main/project/data/Vote_Share.csv",
@@ -15,7 +15,6 @@
   },
 
 
-  "width": 500,  
 
   "encoding": {
       "y": {
