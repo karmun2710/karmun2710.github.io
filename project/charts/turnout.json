@@ -15,20 +15,20 @@
   },
 
   "encoding": {
-    "x": {"field": "time", "title": "Time"}
+    "y": {"field": "time", "title": "Time"}
    
   },
   "layer": [
     {
-      "mark": {"type": "bar", "size": 10, "xOffset": 5, "color": "red"},
+      "mark": {"type": "bar", "size": 10, "yOffset": 5, "color": "red"},
       "encoding": {
-    "y": {"field": "GE14 Turnout", "type": "quantitative", "title": "Percentage of Turnout"}
+    "x": {"field": "GE14 Turnout", "type": "quantitative", "title": "Percentage of Turnout"}
       }
     },
     {
-      "mark": {"type": "bar", "size": 10, "xOffset": 15, "color": "blue"},
+      "mark": {"type": "bar", "size": 10, "yOffset": 15, "color": "blue"},
       "encoding": {
-    "y": {"field": "GE15 Turnout", "type": "quantitative", "title": ""}
+    "x": {"field": "GE15 Turnout", "type": "quantitative", "title": ""}
       }
     }
   ]

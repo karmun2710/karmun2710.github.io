@@ -15,20 +15,20 @@
   },
 
   "encoding": {
-    "x": {"field": "Time"}
+    "y": {"field": "Time"}
    
   },
   "layer": [
     {
-      "mark": {"type": "bar", "size": 10, "xOffset": 5, "color": "red"},
+      "mark": {"type": "bar", "size": 10, "yOffset": 5, "color": "red"},
       "encoding": {
-    "y": {"field": "GE14 Votes", "type": "quantitative", "title": "Number of Votes"}
+    "x": {"field": "GE14 Votes", "type": "quantitative", "title": "Number of Votes (Millions)"}
       }
     },
     {
-      "mark": {"type": "bar", "size": 10, "xOffset": 15, "color": "blue"},
+      "mark": {"type": "bar", "size": 10, "yOffset": 15, "color": "blue"},
       "encoding": {
-    "y": {"field": "GE15 Votes", "type": "quantitative", "title": ""}
+    "x": {"field": "GE15 Votes", "type": "quantitative", "title": ""}
       }
     }
   ]
