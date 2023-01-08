@@ -33,28 +33,28 @@
       "x": {
         "field": "Reduced Dimension 1",
         "type": "quantitative",
-        "title":"Reduced Dimension 1"
+        "title":""
         
       },
   
       "y": {
         "field": "Reduced Dimension 2",
         "type": "quantitative",
-        "title":"Reduced Dimnesion 2"
+        "title":""
       },
   
       "color": {
         "field": "Rank Band", 
         "type": "ordinal", 
         "title":null, 
-        "scale": {"scheme": "spectral"}
+        "scale": {"scheme": "redpurple"}
         
       },
   
       
   
       "opacity": {
-        "condition": {"selection": "rankSelect", "value": 0.9}, "value": 0.04
+        "condition": {"selection": "rankSelect", "value": 1.8}, "value":0.7
         },
   
       "size": {
