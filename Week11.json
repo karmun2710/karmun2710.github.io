@@ -1,0 +1,73 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "description": "",
+  
+    "title": {
+      "text": "Distinguishing ATP Ranking Band (Top Tennis Players)",
+      "subtitle": ["Source: Ultumate Tennis Statistics"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"},
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/karmun2710/karmun2710.github.io/main/Tennis.csv"
+    },
+  
+  
+  
+    "height":350,
+    "width":300,
+  
+  
+          "selection": {
+      "selector": {"type":"multi", "on": "mouseover", "nearest": true},
+      "grid": {"type": "interval", "bind": "scales"},
+      "rankSelect": {"type": "multi", "fields": ["Rank Band"], "bind": "legend"}
+    },
+  
+    "mark": "circle",
+  
+    "encoding": {
+      "x": {
+        "field": "Reduced Dimension 1",
+        "type": "quantitative",
+        "title":"Reduced Dimension 1"
+        
+      },
+  
+      "y": {
+        "field": "Reduced Dimension 2",
+        "type": "quantitative",
+        "title":"Reduced Dimnesion 2"
+      },
+  
+      "color": {
+        "field": "Rank Band", 
+        "type": "ordinal", 
+        "title":null, 
+        "scale": {"scheme": "spectral"}
+        
+      },
+  
+      
+  
+      "opacity": {
+        "condition": {"selection": "rankSelect", "value": 0.9}, "value": 0.04
+        },
+  
+      "size": {
+        "condition": {"selection": "selector", "value": 200}},
+        
+  
+      "tooltip": [
+        {"field": "Name", "type": "nominal", "title": "Name"},
+        {"field": "Winners", "type": "ordinal", "title": "Winners"},
+        {"field": "Tie Breaks Won", "type": "quantitative", "title": "Tie Breaks Won", "format": ","},
+        {"field": "Point Dominance", "type": "quantitative", "title": "Point Dominance"},
+        {"field": "Points Per Return Game", "type": "quantitative", "title": "Points per Return Game"}         
+      ]
+    }
+    }
+  
