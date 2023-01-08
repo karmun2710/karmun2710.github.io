@@ -154,3 +154,16 @@ p {
     margin-left: 75px;
     margin-bottom: 20px; 
 }
+
+.chart11{
+    align-items: center;
+    background-color: white;
+    width:400px;
+    
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #313d5a;
+    margin-left: 250px;
+    margin-bottom: 20px;
+}
