@@ -10,8 +10,8 @@
       "subtitleFontSize": 10,
       "anchor": "start"
     },
-    "height": 495,
-    "width": 777,
+    "height": 300,
+    "width": 500,
     "background": "white",
     "data": {
       "url": "https://raw.githubusercontent.com/karmun2710/karmun2710.github.io/main/depressionstats.csv"
