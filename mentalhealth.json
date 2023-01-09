@@ -11,7 +11,7 @@
       "anchor": "start"
     },
     "height": 300,
-    "width": 500,
+    "width": 300,
     "background": "white",
     "data": {
       "url": "https://raw.githubusercontent.com/karmun2710/karmun2710.github.io/main/depressionstats.csv"
